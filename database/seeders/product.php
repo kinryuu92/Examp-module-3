@@ -18,6 +18,5 @@ class product extends Seeder
         $product->name = 'Ca phe dao thoi';
         $product->price = '123123';
         $product->category_id = '1';
-
     }
 }
