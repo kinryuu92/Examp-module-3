@@ -27,72 +27,14 @@
 
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-
-                <li class="nav-item">
-                    <a href="{{ route('categories.index', ['en']) }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            {{ __('message.Category') }}
-                            <span class="right badge badge-danger">New</span>
-                        </p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('menus.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            {{__('message.Menus')}}
-                       </p>
-                    </a>
-                </li>
-
                 <li class="nav-item">
                     <a href="{{ route('product.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            {{__('message.Product')}}
+                            Product
                         </p>
                     </a>
                 </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('slider.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            {{__('message.Slider')}}
-
-                        </p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('settings.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            {{__('message.Settings')}}
-                        </p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('users.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            {{__('message.User') }}
-                        </p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="{{ route('roles.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            {{__('message.Roles') }}
-                        </p>
-                    </a>
-                </li>
-
             </ul>
         </nav>
     </div>

@@ -47,45 +47,20 @@
                                        name="feature_image_path">
                             </div>
 
-                            <div class="form-group">
-                                <label>Ảnh chi tiết</label>
-                                <input type="file"
-                                       class="form-control-file"
-                                       multiple
-                                       name="image_path[]">
-                            </div>
+{{--                            <div class="form-group">--}}
+{{--                                <label>Chọn danh mục</label>--}}
+{{--                                <select class="form-control select2_init @error('category_id') is-invalid @enderror"--}}
+{{--                                        name="category_id" >--}}
 
-                            <div class="form-group">
-                                <label>Chọn danh mục</label>
-                                <select class="form-control select2_init @error('category_id') is-invalid @enderror"
-                                        name="category_id" >
-
-                                    <option value="">Chọn danh mục</option>
-                                    {!! $htmlOption !!}
-                                </select>
-                            </div>
-                            @error('category_id')
-                            <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
-
-                            <div class="form-group">
-                                <label>Nhập tags cho sản phẩm</label>
-                                <select name='tags[]' class="form-control tags_select_choose" multiple="multiple">
-                                </select>
-                            </div>
+{{--                                    <option value="">Chọn danh mục</option>--}}
+{{--                                </select>--}}
+{{--                            </div>--}}
+{{--                            @error('category_id')--}}
+{{--                            <div class="alert alert-danger">{{ $message }}</div>--}}
+{{--                            @enderror--}}
 
                         </div>
                         <div class="col-md-12">
-                            <div class="form-group">
-                                <label>Nhập nội dung</label>
-                                <textarea name="contents" class=" @error('contents') is-invalid @enderror
-                                    form-control tinymce_editor_init " rows="6"> {{ old('contents') }} </textarea>
-                                @error('contents')
-                                <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror
-                            </div>
-
-
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
